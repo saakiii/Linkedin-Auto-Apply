@@ -980,6 +980,8 @@ def apply_to_jobs(search_terms: list[str]) -> None:
             print_lg(driver.page_source, pretty=True)
             # print_lg(e)
 
+print("\n**************** Final Statistics ****************")
+display_stats()
         
 def run(total_runs: int) -> int:
     if dailyEasyApplyLimitReached:
