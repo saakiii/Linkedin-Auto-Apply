@@ -139,6 +139,14 @@ def login_LN() -> None:
         manual_login_retry(is_logged_in_LN, 2)
 #>
 
+# Function to display stats
+def display_stats():
+    print("\n----------------- Job Application Stats -----------------")
+    print(f"Total Jobs Processed: {total_count}")
+    print(f"Applied Successfully: {applied_count}")
+    print(f"Failed Applications : {failed_count}")
+    print(f"Skipped Applications: {skipped_count}")
+    print("---------------------------------------------------------\n")
 
 
 def get_applied_job_ids() -> set:
